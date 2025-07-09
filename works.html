@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夏之光的影视作品</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        
+         /* 头部样式 */
+        header {
+            background-color: #25b803;
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        h2{
+            font-style: italic; /* 斜体 */
+        }
+
+
+        .works {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        .work-item {
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .work-item img {
+            width: 40%; /* 让图片宽度占满父容器 */
+            height: auto; /* 自动调整高度以保持宽高比例 */
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            object-fit: contain; /* 保持图片完整显示，可能会留白 */
+        }
+
+
+        .centered-image {
+            display: block;
+            margin: 1rem auto; /* 水平居中 */
+            width: 50%;
+            border-radius: 8px;
+        }
+        .work-item h3 {
+            margin: 1rem 0 0.5rem;
+        }
+        
+        .work-item p {
+            margin: 0;
+        }
+
+        .title-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .title-container h2 {
+            font-size: 35px;
+            margin: 0 10px 0 0;
+        }
+        .title-container h3 {
+            font-size: 40px;
+            font-family: 'Creepster', cursive; /* 恐怖字体 */
+            text-shadow: 1.2px 1.2px 1px rgba(0, 0, 0, 0.5); /* 添加文字阴影 */
+            margin: 1rem 0 0.5rem; /* 调整上下间距 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>欢迎来到夏之光的世界！</h1>
+    </header>
+    <div class="container">   
+        <div class="work-item">
+            <div class="title-container">
+                <h2 style="font-size: 35px; display: inline-block; white-space: nowrap;">致命游戏</h2>
+                <h3 style="display: inline-block; white-space: nowrap;">————欢迎来到门的世界！</h3>
+            </div>
+            <img class="centered-image" src="img/two3.gif" alt="视频">          
+        
+            <!-- 应援图片区域 -->
+            <section class="work-item img">
+                <img src="img/two1.jpg" alt="照片1">
+                <img src="img/two3.jpg" alt="照片2">
+            </section>
+        </div>
+
+        <div class="work-item">
+            <img src="work2.jpg" alt="作品2">
+            <h2>作品2标题</h2>
+            <p>作品2简介...</p>
+        </div>
+        <!-- 添加更多作品 -->
+    </div>
+</body>
+</html>
